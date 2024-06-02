@@ -26,17 +26,17 @@ print(len(lista_personajes))
 
 
 #Convierto todos los numeros a enteros/flotantes
-def normalizar_datos(Lista:list):
+def normalizar_datos(Lista_personajes:list):
 
-    for i in range(len(lista_personajes)):
-        if lista_personajes[i]["altura"] != float:
-            casteado = float(lista_personajes[i]["altura"])
+    for i in range(len(Lista_personajes)):
+        if Lista_personajes[i]["altura"] != float:
+            casteado = float(Lista_personajes[i]["altura"])
         
-        if lista_personajes[i]["peso"] != float:
-            casteado = float(lista_personajes[i]["peso"])
+        if Lista_personajes[i]["peso"] != float:
+            casteado = float(Lista_personajes[i]["peso"])
         
-        if lista_personajes[i]["fuerza"] != int:
-            casteado = int(lista_personajes[i]["fuerza"])
+        if Lista_personajes[i]["fuerza"] != int:
+            casteado = int(Lista_personajes[i]["fuerza"])
     
     return casteado
 
@@ -84,11 +84,11 @@ def calcular_maximo(lista: list, clave: str):
     for i in range(len(lista)):
         if puerta_maximo == True:
             puerta_maximo = False
-            maximo = lista[i][clave]
+            maximo = float(lista[i][clave])
         
         else:
-            if maximo < lista[i][clave]:
-                maximo = lista[i][clave]
+            if maximo < float(lista[i][clave]):
+                maximo = float(lista[i][clave])
                 puerta_maximo = False
 
     return maximo
@@ -104,11 +104,11 @@ def calcular_minimo(lista: list, clave: str):
     for i in range(len(lista)):
         if puerta_minimo == True:
             puerta_minimo = False
-            minimo = lista[i][clave]
+            minimo = float(lista[i][clave])
         
         else:
-            if minimo > lista[i][clave]:
-                minimo = lista[i][clave]
+            if minimo > float(lista[i][clave]):
+                minimo = float(lista[i][clave])
                 puerta_minimo = False
 
     return minimo
@@ -123,9 +123,28 @@ print(calcular_maximo(lista_personajes, "altura"))
 'F. Recorrer la lista y determinar la altura promedio de los superhéroes'
 '(PROMEDIO)'
 
-def promedio(lista: list):
-    pass
+def totalizar_datos(lista:list, clave:str) ->int:
+    cantidad = len(lista)
+    total = 0
+    
+    for i in range(cantidad):
+        numero = float(lista[i][clave])
+        total = total + numero
+    return total
 
 
+def promediar_datos(lista: list):
+    largo_lista = len(lista)
+    total = totalizar_datos(lista, "altura")
+
+    promedio = total / largo_lista
+
+    return promedio
+
+print(totalizar_datos(lista_personajes, "altura"))
+print(promediar_datos(lista_personajes))
+
+
+"AHORA SI, TERMINAR TODO MAÑANA"
 
 
