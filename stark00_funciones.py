@@ -39,7 +39,7 @@ def imprimir_informacion_superheroe(lista: list, clave: str):
 
 #imprimir_informacion_superheroe(lista_personajes, "nombre")
 
-
+#_________________________________________________________________________________________________
 
 """C. Recorrer la lista imprimiendo por consola nombre de cada superhéroe junto a
 la altura del mismo"""
@@ -51,7 +51,7 @@ def nombre_y_altura(lista:list):
 
 # nombre_y_altura(lista_personajes)
 
-
+#__________________________________________________________________________________________________
 
 """D. Recorrer la lista y determinar cuál es el superhéroe más alto (MÁXIMO)"""
 
@@ -71,7 +71,7 @@ def calcular_maximo(lista: list, clave: str)-> float:
 
     return maximo
 
-
+#_______________________________________________________________________________________________
 
 """E. Recorrer la lista y determinar cuál es el superhéroe más bajo (MÍNIMO)"""
 
@@ -94,7 +94,7 @@ def calcular_minimo(lista: list, clave: str)-> float:
 # print(calcular_minimo(lista_personajes, "altura")) 
 # print(calcular_maximo(lista_personajes, "altura"))
 
-
+#_________________________________________________________________________________________
         
 """F. Recorrer la lista y determinar la altura promedio de los superhéroes'
 (PROMEDIO)"""
@@ -120,7 +120,7 @@ def promediar_datos(lista: list):
 # print(totalizar_datos(lista_personajes, "altura"))
 # print(promediar_datos(lista_personajes))
 
-
+#___________________________________________________________________________________
 
 """G. Informar cual es el Nombre del superhéroe asociado a cada uno de los
 indicadores anteriores (MÁXIMO, MÍNIMO)"""
@@ -142,7 +142,7 @@ def nombre_maximo_minimo(lista: list, clave:str, maximo: bool = True):
     
 # print(nombre_maximo_minimo(lista_personajes, "altura", True))
 
-
+#____________________________________________________________________________________________________________
 
 """H. Calcular e informar cual es el superhéroe más y menos pesado."""
 
@@ -158,7 +158,7 @@ def mas_pesado(lista: list, clave: str):
     
 
 #print(mas_pesado(lista_personajes, "peso"))
-
+#___________________________________________________________________________________________________________
 
 def menos_pesado(lista: list, clave: str):
     total_indices = len(lista)

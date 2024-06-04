@@ -2,6 +2,14 @@ from data_stark import lista_personajes
 from stark00_funciones import *
 from os import system
 
+"""
+Nombre y apellido: Osorio Brenda
+Legajo: 116637
+Division: 113
+Profesores: Christian Baus, 
+
+"""
+
 def pausar():
     """Funcion que pause el programa 
     hasta que el usuario presione alguna tecla.
