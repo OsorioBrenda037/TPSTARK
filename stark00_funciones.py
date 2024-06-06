@@ -140,7 +140,7 @@ def nombre_maximo_minimo(lista: list, clave:str, maximo: bool = True):
     
     
     
-# print(nombre_maximo_minimo(lista_personajes, "altura", True))
+#print(nombre_maximo_minimo(lista_personajes, "altura", True))
 
 #____________________________________________________________________________________________________________
 
